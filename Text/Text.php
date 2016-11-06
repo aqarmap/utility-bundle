@@ -1,7 +1,7 @@
 <?php
-namespace Aqarmap\Bundle\UtilityBundle\String;
+namespace Aqarmap\Bundle\UtilityBundle\Text;
 
-class String
+class Text
 {
     public static function toList($list, $and = 'and', $separator = ', ')
     {
