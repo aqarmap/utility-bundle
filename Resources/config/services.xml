@@ -7,7 +7,7 @@
         <service id="aqarmap.twig.utility_extension_gravatar" class="Aqarmap\Bundle\UtilityBundle\TwigExtensions\Gravatar">
             <tag name="twig.extension" />
         </service>
-        <service id="aqarmap.twig.utility_extension_string" class="Aqarmap\Bundle\UtilityBundle\TwigExtensions\String">
+        <service id="aqarmap.twig.utility_extension_string" class="Aqarmap\Bundle\UtilityBundle\TwigExtensions\Text">
             <tag name="twig.extension" />
         </service>
     </services>

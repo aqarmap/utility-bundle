@@ -2,10 +2,10 @@
 namespace Aqarmap\Bundle\UtilityBundle\TwigExtensions;
 
 /**
- * String
+ * Text
  * Extension for Twig
  */
-class String extends \Twig_Extension
+class Text extends \Twig_Extension
 {
 
     public function getFilters()
