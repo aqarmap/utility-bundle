@@ -1,21 +1,24 @@
 <?php
 namespace Aqarmap\Bundle\UtilityBundle\TwigExtensions;
 
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
+
 /**
  * Gravatar
  * Extension for Twig
  *
  * @author  Khaled Attia <khaled.attia@googlemail.com>
  */
-class Gravatar extends \Twig_Extension
+class Gravatar extends AbstractExtension
 {
     const GRAVATAR_URL = "https://www.gravatar.com/avatar/";
 
     public function getFilters()
     {
-        return array(
-            new \Twig_SimpleFilter('gravatar', array($this, 'getGravatarImage')),
-        );
+        return [
+            new TwigFilter('gravatar', [$this, 'getGravatarImage']),
+        ];
     }
 
     /**

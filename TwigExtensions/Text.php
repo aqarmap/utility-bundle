@@ -1,18 +1,21 @@
 <?php
 namespace Aqarmap\Bundle\UtilityBundle\TwigExtensions;
 
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
+
 /**
  * Text
  * Extension for Twig
  */
-class Text extends \Twig_Extension
+class Text extends AbstractExtension
 {
 
     public function getFilters()
     {
-        return array(
-            new \Twig_SimpleFilter('chunk_pad', array($this, 'chunkPad')),
-        );
+        return [
+            new TwigFilter('chunk_pad', [$this, 'chunkPad']),
+        ];
     }
 
     /**
